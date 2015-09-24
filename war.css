@@ -1,0 +1,50 @@
+body
+	{
+	background-color: tan;
+	}
+h1
+    {
+     margin-left: 75px;
+    }
+h2
+    {
+    margin-left: 45px;
+    }
+button
+    {
+	background: lightblue;
+    }
+
+.deck
+    {
+    visibility: visible;
+    margin-left: 60px;
+    }
+.cards
+    {
+    margin-left: 60px;
+    padding-top: 15px;
+    }
+
+#table
+    {
+    height: 400px; 
+    width: 400px;
+    background-image: url(images/cardTable400.jpg);
+    background-repeat: no-repeat;
+    }
+#buttons
+    {
+    padding-top: 50px;
+    }
+#shuffle, #play
+    {
+    margin: 20px;
+    }
+#opponentCard, #playerCard
+    {
+    visibility: hidden;
+    margin-left: 100px:
+    }
+
+

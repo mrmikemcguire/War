@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="war.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.js"></script>
+    <title>This Means War!</title>
+</head>
+
+<body>
+    <header>
+        <h1>This Means War!</h1>
+    </header>
+    <div id="table">
+        <div class="cards">
+            <h2>Opponent's Card</h2>
+            <img class="deck" src="images/classic-cards/redVertFull.png">
+            <img id="opponentCard" src="images/classic-cards/redVertFull.png">
+            <h2>Your Card</h2>
+            <img class="deck" src="images/classic-cards/redVertFull.png">
+            <img id="playerCard" src="images/classic-cards/redVertFull.png">
+        </div>
+    </div>
+    
+	<div id="buttons">
+        <input type="image" src="images/shuffling150.jpg" class="btTxt submit" id="shuffle" onclick="shuffle(deck);document.getElementById('sound').play()"/>
+        <input type="image" src="images/revealCard150.jpg" class="btTxt submit" id="play" onclick="play()"/>
+	</div>
+	
+	<audio id='sound'>  
+        <source src="sounds/shufflingCards.mp3" />  
+    </audio> 
+    
+	<div>
+		<h2 id="opponentScore"></h2>
+		<h2 id="playerScore"></h2>
+		<h2 id="cardsLeft"></h2>
+		<h2 id="winner"></h2>
+	</div>
+
+    <script src="war.js"></script>
+</body>
+</html>
+
+
